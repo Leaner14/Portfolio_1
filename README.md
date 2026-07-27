@@ -79,42 +79,6 @@ No `npm install` or dependency setup is required — all third-party assets (Fon
 
 ---
 
-## 🎨 Customization
-
-### Update your info
-- **Name, role, bio:** edit the `<section class="hero">` block in `index.html`.
-- **Profile photo:** replace the `src` on `.portrait-img` with your own image in `assets/images/`.
-- **Resume:** replace `assets/resume.pdf` with your actual PDF (same filename, or update the `href` in both the navbar and hero buttons).
-- **Social links:** update the `href` attributes on the GitHub/LinkedIn/email icons (hero, contact section, footer).
-
-### Colors & theme
-All colors live as CSS custom properties at the top of `css/style.css`:
-
-```css
-:root {
-  --bg: #0f172a;       /* page background */
-  --card: #1e293b;     /* card surfaces */
-  --primary: #38bdf8;  /* accent / sky blue */
-  --text: #f8fafc;     /* primary text */
-  --text-secondary: #94a3b8;
-}
-```
-Change these values to re-theme the entire site.
-
-### Skills
-Edit the `<section id="skills">` markup — update `data-pct` on `.bar-fill` (0–100) and on `.ring` elements to change the animated progress values.
-
-### Projects
-Duplicate a `<article class="project-card">` block inside `#projects`, updating the image, title, description, tech stack tags, and `data-tags` attribute (used by the filter buttons — space-separated, lowercase).
-
-### Experience & Certifications
-Duplicate a `.timeline-item` block inside `#experience` with a new icon, date, title, and description.
-
-### Contact form
-The form currently validates client-side only and simulates a successful submission (see `script.js`). To make it functional, wire the `submit` handler to your backend/service of choice (e.g. Formspree, EmailJS, or your own API endpoint) and send the collected field values.
-
----
-
 ## 🌐 Deployment
 
 This is a fully static site — deploy it anywhere that serves static files:
@@ -125,12 +89,3 @@ This is a fully static site — deploy it anywhere that serves static files:
 
 ---
 
-## ✅ Browser Support
-
-Modern evergreen browsers (Chrome, Edge, Firefox, Safari) — uses CSS Grid, custom properties, `backdrop-filter`, and the Canvas API. Gracefully degrades animations when `prefers-reduced-motion` is enabled.
-
----
-
-## 📄 License
-
-Free to use, modify, and deploy for personal or professional portfolio purposes.
